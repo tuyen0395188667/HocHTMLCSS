@@ -1,0 +1,203 @@
+<!DOCTYPE html> <!-- Là phần khai báo kiểu dữ liệu hiển thị là HTML để trình duyệt biết -->
+<html>
+<!-- Bao hết nội dung của trang web -->
+
+<head>
+    <!-- Là phần khai báo thông tin của trang web -->
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Hoc HTML</title> <!-- Khai báo tiểu đề của trang web -->
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+
+<body>
+    <!-- Chứa mã HTML dùng để hiển thị lên trang web và các thẻ nằm trong là các thẻ định dạng dữ liệu -->
+    <!-- Bai 2 HTML Elements(the? HTML) Và HTML Attrubutes (Thuoc tinh cua the) -->
+    <!-- Khuyet dong the(quick closetag) Chi ton tau the mo? -->
+    <!-- Thẻ long trong the: Khong duoc quen the dong -->
+    <!-- Trong 1 tai lieu HTML chi có 1 dinh dang ID(Khoa cua the) duy nhat con class vs name thi co nhieu-->
+    <!-- HTML Attibutes: Thuoc tinh cua the
+         Dau nhay don va nhay kep 
+         Vi du id = "fullname": id la thuoc tinh; fullname la noi dung cua thuoc tinh do-->
+    <!-- Bai3 cac the dinh dang van ban -->
+    <!-- <p></p> Phan doan van -->
+    <!-- <br> Xuong hang -->
+    <!-- <b></b> Boi dam -->
+    <!-- <strong></strong> Nhan manh -->
+    <!-- <i></i> in nghieng -->
+    <!-- <small></small> Chu nho -->
+    <!-- <mark></mark> hightline -->
+    <!-- <del></del> Gach giua -->
+    <!-- <sub></sub> Nhay xuong duoi -->
+    <!-- <sup></sup> Nhay len tren -->
+    <p>
+        Học HMLT
+    </p>
+    <p>
+        Học HTML <br> Thật là vui
+    </p>
+    <p>
+        Học HTML <b> Thật là vui</b>
+    </p>
+    <p>
+        Học HTML <strong>Thật là vui</strong>
+    </p>
+    <p>
+        Học HTML <i>Thật là vui</i>
+    </p>
+    <p>
+        Học HTML <small>Thật là vui</small>
+    </p>
+    <p>
+        Học HTML <mask>Thật là vui</mask>
+    </p>
+    <p>
+        Học HTML <del>Thật là vui</del>
+    </p>
+    <p>
+        Học HTML <sub>Thật là vui</sub>
+    </p>
+    <p>
+        Học HTML <sup>Thật là vui</sup>
+    </p>
+    <!-- Bai 4 Cac the HTML ding dang Heading và list-->
+    <!-- Heading: Tu h1 đến h6 Sung tieu de chinh/ giam? dan tieu de phu-->
+    <!-- The ding dang List: Tao cac danh sach tung item, muon su dung can them
+         The ul: Khai bao danh sach items; the li: Khai bao cho tung item -->
+    <ul>
+        <li>item1</li>
+        <li>item2</li>
+        <ul>
+            <li>item2.1</li>
+        </ul>
+        <li>Hoc HTML</li>
+    </ul>
+    <!-- Bai 5 Cac the HTML dinh dang Table -->
+    <!-- Table la mot dinh dang dung de hien thi du lieu o? dang danh sach
+         Moi table se duoc chia ra hai thanh phan cot va hang, va duoc tao thanh boi cac the table, tr, td, tbody, thead, tfood -->
+    <!-- Thuoc tinh border="1" Khai bao duong vien cua table;
+         Thuoc tinh cellspacing="0" Khai bao khoang cach giua vien tren va vien duoi
+         Thuoc tinh cellpadding="10" Khai bao khoang cach giua noi dung trong o so voi duong vien
+         td bo sung cot
+         tr bo sung hang 
+    -->
+    <table border="1" cellspacing="0" cellpadding="5">
+        <tr>
+            <th style="color: red;">Hang 1 cot 1</th>
+            <th style="color: red;">Hang 1 cot 2</th>
+            <td>Hang 1 cot 3</td>
+            <td>Hang 1 cot 4</td>
+        </tr>
+        <tr>
+            <td>Hang 2 cot 1</td>
+            <td>Hang 2 cot 2</td>
+            <td>Hang 2 cot 3</td>
+            <td>Hang 2 cot 4</td>
+        </tr>
+    </table>
+    <!--Thuoc tinh clospan: Gop hang-->
+    <br>
+    <table border="1" cellspacing="0" cellpadding="5">
+        <tr>
+            <td colspan="2">Hang 1 cot 1 Hang 1 cot 2</td>
+            <td>Hang 1 cot 3</td>
+            <td>Hang 1 cot 4</td>
+        </tr>
+        <tr>
+            <td>Hang 1 cot 1</td>
+            <td>Hang 1 cot 2</td>
+            <td>Hang 1 cot 3</td>
+            <td>Hang 1 cot 4</td>
+        </tr>
+    </table>
+    <!-- Thuoc tinh rowspan: Gop Cot viet/ trong the mo? td -->
+    <br>
+    <table border="1" cellspacing="0" cellpadding="5">
+        <tr>
+            <td rowspan="2">Hang 1 cot 1 <br> Hang 2 cot 1</td>
+            <td>Hang 1 cot 2</td>
+            <td>Hang 1 cot 3</td>
+            <td>Hang 1 cot 4</td>
+        </tr>
+        <tr>
+            <td>Hang 1 cot 2</td>
+            <td>Hang 1 cot 3</td>
+            <td>Hang 1 cot 4</td>
+        </tr>
+    </table>
+    <br>
+    <!-- Nhom the Thead - Tbody - Tfoot -->
+    <!-- Bo cuc cua website gom cac thanh phan header, content, footer 
+         Trong table chia lam 3 thanh phan chinh/ header, body, footer 
+         Ung voi nhom the                         thead,  tbody,tfooter-->
+    <table border="1" cellspacing="0" cellspadding="0">
+        <thead>
+            <tr>
+                <td>Username</td>
+                <td>Email</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Tuyen1</td>
+                <td>Tuyen@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Tuyen2</td>
+                <td>Tuyen2@gmail.com</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Username</td>
+                <td>Email</td>
+            </tr>
+        </tfoot>
+    </table>
+    <br>
+    <!-- Bai 6 Dung the a trong HTML de tao links -->
+    <!-- Co 2 loai Link: Noi bo va Link out ra ngoai Website khac 
+         Link nội bộ là link chỉ liên kết tới những trang nằm trong nội bộ của domain, còn link out ra ngoài là link trỏ tới những website không phải là domain hiện tại.-->
+    <!-- href Duong link dia chi Website
+         title Tieu de cho duong link khi tro chuot se nhin thay
+         rel la cac gia tri danh cho SEO
+         target la cac tuy chon, neu no co gia tri(gia tri mac dunh la _self)
+         _blank Chuyen? link tren tab moi
+         _self Chuyen? link tren tab hien tai
+         _top Nhay? toi tab hien tai va thuong dung trong iframe khi muon thoat khoi iframe va chay toi trang goc luon-->
+    <a href="https://freetuts.net" target="_blank" title="Hoc lap trinh online" rel="follow, index">Freetuts.net</a>
+    <br>
+    <a href="#footer" target="_blank" title="học lập trình online" rel="follow, index">Đi tới div#footer</a>
+    <br>
+    <!-- Bai 7 Dung the img trong HTML de tao hinh anh -->
+    <!-- Thuoc tinh src la thuoc tinh chua duong dan tro den file hinh\
+         https://freetuts.net/images/image-name.png là full URL
+         ./images/image-name.png là ngay thư mục hiện tại -->
+    <img src="https://freetuts.net/upload/tut_post/images/2014/08/14/122/xay-dung-chuc-nang-scrollto-voi-jquery.gif" />
+    <br>
+    <!-- Thuoc tinh alt Se hien thi khi link anh bi sai -->
+    <!-- Thuoc tinh Width(rong) va Height(cao) -->
+    <img width="500px" height="300px" src="https://freetuts.net/upload/tut_post/images/2014/08/14/122/xay-dung-chuc-nang-scrollto-voi-jquery.gif" alt="hình ảnh" />
+    <br>
+    <!-- Ket hop the a de tao link hinh -->
+    <a href="https://freetuts.net" target="_blank">
+        <img src="http://code.freetuts.net/upload/config/images/hoc-lap-trinh-online.png" title="Học lập trình" />
+    </a>
+    <br>
+    <!-- Ket hop the Map de gan link vao mot vi tri nho trong hinh -->
+    <!-- Giả sử bạn có một hình ảnh vệ tinh trong đó có một góc nhỏ là ảnh mặt trời. Bạn muốn khi click vào góc nhỏ mặt trời trong hình đó thì nó sẽ chuyển tới hình full về mặt trời -->
+    <!-- Trong the img co mot thuoc tinh usermap="#planetmap" co nghia la chi din map duoc apply trong hinh nay,
+         vi gia tri cua no la #planetmap nen no se lay the map co name="planetmap"
+         shape="rect" tuc la rectangle
+         coords="0,0,82,126" tức là danh sách các tọa độ tạo thành area, lấy hình ảnh trên kia làm tiêu chuẩn để đo và được tính bằng pixel
+         alt="sun" là khi hover chuột vào vị trí có tọa độ trên thì sẽ hiển thị title này
+         href="http://www.w3schools.com/images/sun.gif" là link khi click vào area này thì chuyển đến -->
+    <img src="http://www.w3schools.com/TAGS/planets.gif" width="145" height="126" alt="Planets" usemap="#planetmap">
+    <map name="planetmap">
+        <area shape="rect" coords="0,0,82,126" alt="Sun" href="http://www.w3schools.com/images/sun.gif">
+    </map>
+</body>
+
+</html>

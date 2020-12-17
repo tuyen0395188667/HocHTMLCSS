@@ -1,0 +1,45 @@
+<!-- Bài 14: Thuộc tính Position trong CSS -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Học HTML bài 14</title>
+    <link href="style14.css" rel="stylesheet"/>
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="content">
+            Content
+        </div>
+
+        <div style="height: 500px; background: red;">
+
+        </div>
+        <div class="absolute" style="height: 300px; background:gold;">
+            <span>
+                Oke em
+            </span>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<!-- Thuộc tính Position trong CSS -->
+<!-- 
+    Position Fixed: Để treo thẻ
+    Position relative: Để cho Position absolute so sánh với chính thẻ của nó (Để xây dựng menu)
+    Position absolute: Để đưa nội dung tử thẻ này sang thẻ khác (so sánh với thẻ body)
+    Khoảng cách âm sẽ đẩy ra xa
+-->
+
+<!-- Hiển thị kiểu Fiexd -->
+    <!-- Giúp treo thẻ Không bị di chuyển khi di chuyển chuột 
+        Nhưng không có tác dụng chiếm 1 không gian cụ thể trên giao diện-->
+    <!-- Khi sử dụng thuộc tính Position Fixed chiều rộng của nó đã bị thay đổi-->
+    <!-- Một thẻ HTML khi hiển thị ở dạng Fixed thì nó sẽ tự động chuyển sang Display inline-block -->

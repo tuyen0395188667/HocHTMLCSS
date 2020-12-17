@@ -1,0 +1,53 @@
+/* .wrapper
+{
+    border: solid 1px black;
+    background: red;
+} */
+
+ul{
+    margin: 0px;
+/* Do thẻ ul mặc định có khoảng các padding nên ta phải reset nó */
+    padding: 0px;
+}
+.wrapper ul li
+{
+/* Sử dụng list-style: none Để bỏ dấu chấm trong thẻ li */
+    list-style: none;
+/* Sử dụng float left để cho các phần tử li thẳng hàng */
+    float: left;
+    background: #2f6e91;
+/* Sử dụng position: relative để làm tường */
+    position: relative;
+}
+
+/* Sử dụng hover để khi chuột chỉ vào background thành màu khác */
+.wrapper ul li:hover 
+{
+    background: #315062;
+}
+
+.wrapper ul li a
+{
+        color: #fff;
+    /* text-decoration: none Không gạch chân */
+        text-decoration: none;
+    /* Sử dụng display: lock Để cho thẻ a sử dụng padding */
+        display: block;
+    /* Sử dụng padding(Khoảng cách từ viền đến nội dung bên trong thẻ) 20px(trên dưới) 20px(trái phải) 20px(đứng 1 mình thì là cả 4 hướng */
+        padding: 20px 30px;
+}
+
+/* Làm bức tranh do ul nằm trong li của ul đầu */
+.wrapper ul li ul
+{
+    /* Làm tranh treo */
+    position: absolute;
+    /* Sử dụng display: none để ẩn*/
+    display: none;
+    top: 58px;
+    left: 0px;
+}
+.wrapper ul li ul li{
+    width: 150px;
+}
+ 

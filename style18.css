@@ -1,0 +1,39 @@
+
+/* Sử dụng list-style: none Để bỏ dấu chấm trong thẻ li */
+/* Sử dụng float left để cho các phần tử li thẳng hàng */
+/* text-decoration: none Không gạch chân */
+/* Sử dụng howver để khi chuột chỉ vào background thành màu khác */
+
+.wrapper
+{
+    border: solid 1px black;
+}
+
+    .wrapper ul li
+    {
+    /* Sử dụng list-style: none Để bỏ dấu chấm trong thẻ li */
+        list-style: none;
+    /* Sử dụng float left để cho các phần tử li thẳng hàng */
+        float: left;
+        background: #2f6e91;
+
+    }
+
+/* Sử dụng hover để khi chuột chỉ vào background thành màu khác */
+    .wrapper ul li a:hover
+    {
+        background: #315062;
+    }
+
+    .wrapper ul li a
+    {
+            color: #fff;
+        /* text-decoration: none Không gạch chân */
+            text-decoration: none;
+        /* Sử dụng display: inline-lock Để cho thẻ a sử dụng padding */
+            display: inline-block;
+        /* Sử dụng padding(Khoảng cách từ viền đến nội dung bên trong thẻ) 20px(trên dưới) 20px(trái phải) 20px(đứng 1 mình thì là cả 4 hướng */
+            padding: 20px 40px;
+    }
+
+    /* Do ban đầu thẻ a chứa nhỏ, nên sử dụng padding trong thẻ a để nó to ra */

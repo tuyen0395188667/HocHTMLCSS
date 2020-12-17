@@ -1,0 +1,38 @@
+
+.header{
+    background: red;
+    height: 150px;
+    border: solid 2px black;
+
+}
+.container{
+    height: 500px;
+    border: solid 10px gold;
+}
+
+.content{
+    background: blue;
+    float: left;
+    width: 70%;
+    height: 100%;
+
+}
+
+.sidebar_right{
+    background: green;
+    float: right;
+    width: 30%;
+    height: 100%;
+ 
+}
+
+.clear_fix{
+    clear: both;
+}
+
+.footer{
+    background: pink;
+    height: 200px;
+    border: solid 2px black;
+
+}

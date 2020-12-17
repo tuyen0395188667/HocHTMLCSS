@@ -1,0 +1,31 @@
+a{
+    display: inline-block;
+    /* 10px trên dưới/ 30px trái phải */
+    padding: 10px 30px;
+    background: green;
+    color: #fff;
+    /* text-decoration: none; Không gạch chân */
+    text-decoration: none;
+    /* Thiết lập thẻ này thành 1 bức tường để treo các thẻ khác lên bức tường này
+        Nếu không thiết lập nó sẽ hiểu thẻ body là bức tường    
+    */
+    position: relative;
+    border: solid black;
+}
+
+a:after{
+    content: " ";
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: absolute;
+    top: 40px;
+    right: -90px;
+    background: url('tro.jpg') no-repeat;
+}
+
+/* a::before{
+    content: "Before";
+} */
+
+/* 2 thẻ này là thẻ con của thẻ a */

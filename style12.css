@@ -1,0 +1,20 @@
+.sidebar_left{
+    background: blue;
+    float: left;
+    width: 30%;
+    height: 500px;
+}
+.content{
+    background: red;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+.sidebar_right{
+    background: green;
+    float: right;
+    width: 30%;
+    height: 500px;
+}
+.container{
+    border: solid 1px black;
+}

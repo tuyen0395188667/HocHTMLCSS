@@ -1,0 +1,52 @@
+ul{
+/* Do thẻ ul mặc định có khoảng các padding nên ta phải reset nó */
+    margin: 0px;
+    padding: 0px;
+}
+
+.wrapper ul > li{
+    list-style: none;
+    float: left;
+    background: #2f6e91;
+    position: relative;
+}
+
+.wrapper ul > li:hover {
+    background: #315062;
+}
+
+.wrapper ul > li > a{
+    text-decoration: none;
+    padding: 10px 20px;
+    color: #ffffff;
+    display: block;
+}
+
+.wrapper ul > li:hover > ul{
+    display: block;
+}
+
+/* dấu > Truy vấn 1 cấp */
+.wrapper ul > li > ul{
+    /* Làm tranh treo */
+    position: absolute;
+    /* Sử dụng display: none để ẩn*/
+    display: none; 
+    top: 38px;
+    left: 0px;
+}
+
+.wrapper ul > li > ul > li{
+    width: 150px;
+    /* Tạo bức tường */
+    position: relative;
+}
+
+.wrapper ul > li > ul > li > ul{
+    position: absolute;
+    top: 0px;
+    left: 150px;
+}
+.wrapper ul > li > ul > li > ul > li{
+    width: 150px;
+}

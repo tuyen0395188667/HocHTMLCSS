@@ -1,0 +1,39 @@
+/* Bài10 */
+/* 
+    #group1{
+        background: black;
+        color: white;
+        border: solid 1px crimson;
+} 
+
+/* 
+    .group{
+        background: black;
+        color: white;
+        border: solid 1px crimson;
+}  
+
+/* Sử dụng cú pháp của Selector thẻ lồng thẻ */
+  
+    /* Đầu tiên chọn đối tượng HTML có tên group2 
+    Sau đó trỏ đến thẻ p nằm trong group2*/
+        #group2 {
+        background: white;
+        height: 900px;
+        width: 900px;
+        border: solid 1px black;
+        
+    } 
+        #group2 p{
+            color:red;
+    } 
+         #group2 p a{
+           color: green;
+    } 
+
+
+/* Cú pháp của ID là: #nameID */
+/* Cú pháp của Class là: .nameclass */
+/* Cú pháp của Selector thẻ trong thẻ #nameID nameTag {...} */
+/* Cú pháp của Selector thẻ trong thẻ #nameID nameTag1 nametag2 {...} 
+*/

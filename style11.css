@@ -1,0 +1,64 @@
+/* Bài 11 */
+
+    /* Thuộc tính background */
+
+        /* Sử dụng thuộc tính url  */
+        /* Cú pháp url('') */ 
+    /* 
+        Background-test{
+            background: url("test.jpg") no-repeat center;
+            height: 500px;
+            width: 500px;
+            border: solid rgb(18, 3, 151);
+    } 
+    */
+
+    /* Thuộc tính font*/
+        
+        /* .Background-test{ */
+            /* border: solid 1px red; */
+            /* Loại chữ */
+                /* font-family: Arial, Helvetica, sans-serif; */
+            /* Chữ nghiêng */
+                /* font-style: italic; */
+            /* in hoa: uppercase , inh thường */
+                /* text-transform: uppercase;  */
+            /* Vị trí chữ */
+                /* text-align: center ; */
+            /* Gạch chân */
+                /* text-decoration: underline ; */
+            /* in đậm */
+                /* font-weight: bold;}  */
+
+    /* Thuộc tính Sự kiện trong thẻ a*/
+        /* Thuộc tính thẻ a ban đầu */
+            .Background-test a{
+                color: white;
+                text-decoration: none;
+                border: solid blue;
+                padding: 5px;
+                background: blue;
+            }
+        /* Thuộc tính hower: Khi ai Hower chuột qua nó sẽ có tác dụng */
+            .Background-test a:hover{
+                background: violet;
+            }
+        /* Thuộc tính visited : Xem đã vào link đó hay chưa, Nếu vào r sẽ hiển thị màu mình chọn*/
+            .Background-test a:visited{
+                background: red;
+            }
+        /* Thuộc tính active: Khi ai nhấn giữ chuột vào thẻ a nó sẽ chuyển trạng thái khác */
+            .Background-test a:active{
+                background: yellow;
+            }
+        /* Thuộc tính link: Khi chưa ai truy cập vào thì nó sẽ có tác dụng */
+            .Background-test a:link{
+                background: green;
+            }
+
+            .Background-test {
+                height: 500px;
+                width: 500px;
+                border: double 5px black;
+                border-radius: 100px;
+              }

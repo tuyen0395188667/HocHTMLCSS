@@ -1,0 +1,86 @@
+<!-- Bài 21: Tìm hiểu form trong html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 21 Học HTML-CSS</title>
+    <link rel="stylesheet" href="style21.css">
+</head>
+
+<body>
+
+    <form class="wrapper">
+        <form action="" method="POST">
+            <table border="1px" cellpadding="10px" cellspacing="0">
+                <tr>
+                    <td>Họ tên</td>
+                    <td>
+                        <input name="hoten" placeholder="23" type="text" />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Mật khẩu đăng nhập</td>
+                    <td>
+                        <input name="matkhau" type="password" value="" />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Giới tính1</td>
+                    <td>
+                        <select name="gioitinh1" id="">
+                            <option value="">Nam</option>
+                            <option value="">Nữ</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Giới tính2</td>
+                    <td>
+                        <input type="radio" id="gioitinh2_nam" name="gioitinh2" value="nam"/>
+                            <label for="gioitinh2_nam">Nam</label>
+                        <input type="radio" id="gioitinh2_nu" name="gioitinh2" value="nữ"/>
+                            <label for="gioitinh2_nu">Nữ</label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Thông tin cá nhân</td>
+                    <td>
+                        <textarea cols="20px" rows="10px"></textarea>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type="reset" class="reset" value="Reset">
+                    </td>
+                    <td>
+                        <input type="submit" class="submit" value="Submit">
+                    </td>
+                </tr>
+
+            </table>
+
+        </form>
+
+    </form>
+
+</body>
+
+</html>
+<!-- Tạo form -->
+<!-- Khi tạo form cần có thẻ form bên ngoài rồi mới có thẻ input -->
+<!-- Form có thuộc tính action Dành cho code PHP, sau đó chon method(phương thức) POST/GET -->
+<!-- value lưu lại giá trị chọn để cho phía Backend -->
+
+<!-- name trong input: Khi sử dụng input select sẽ có name, để cho phía sever tiếp nhận được thông tin nào, dựa vào thông tin này
+    người ta sẽ biết được feel nào VD name giới tính sẽ lấy đúng feel giới tính-->
+
+<!-- Đặt id trong input để cho for trong lable for đến thằng nào mục đích di chuột đến tên cx ấn đc -->
+
+<!-- label for trỏ đến id của thẻ input -->

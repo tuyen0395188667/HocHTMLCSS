@@ -1,0 +1,20 @@
+.wrapper{
+    height: 2000px;
+}
+
+.content{
+    background: blue;
+    position: fixed;
+    width: 90%;
+}
+
+.absolute{
+    position: relative;
+}
+
+.absolute span{
+    position: absolute;
+    top: -150px;
+    left: 0px;
+}
+/* Khoảng cách âm sẽ đẩy ra xa */
